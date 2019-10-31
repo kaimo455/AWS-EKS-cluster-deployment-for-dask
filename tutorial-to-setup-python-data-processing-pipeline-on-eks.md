@@ -23,7 +23,7 @@
 - [**Post Configuration for Airflow**](#Post-Configuration-for-Airflow)
 - [**Summary**](#Summary)
 
-Author: Kai Mo
+Copyright (c) 2019 Bosch
 
 Last modified date: Monday, July 1st 2019, 1:51:13 pm
 
@@ -123,6 +123,9 @@ This is a tutorial that guides you through the basic concepts and steps of deplo
     #    $POSTGRESQL_ADDRESS: postgresql database address, it should
     #        look like DATABASE_ID.abcdefg123.REGION.rds.amazonaws.com:5432
     #    $DATABSE_NAME: name of postgresql database
+    #
+    #    E.g.
+    #    sql_alchemy_conn = "postgresql+psycopg2://kaimo:security55@pipeline-postgresql.caenyxskyq4e.us-east-2.rds.amazonaws.com:5432/pipeline_postgresql"
     #
     sql_alchemy_conn = "postgresql+psycopg2://$DATABASE_USERNAME:$DATABASE_PASSWORD@$POSTGRESQL_ADDRESS
     :5432/$DATABSE_NAME"
