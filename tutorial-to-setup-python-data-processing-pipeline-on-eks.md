@@ -384,7 +384,7 @@ This is a tutorial that guides you through the basic concepts and steps of deplo
 - After installing helm on your machine, initialize helm on your Kubernetes cluster. At the terminal, enter:
 
     ```bash
-    kubectl --namespace kube-system create sa tiller
+    kubectl --namespace kube-system create serviceaccount tiller
 
     kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 
