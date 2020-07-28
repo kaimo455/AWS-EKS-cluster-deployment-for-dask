@@ -125,7 +125,7 @@ This is a tutorial that guides you through the basic concepts and steps of deplo
     #    $DATABSE_NAME: name of postgresql database
     #
     #    E.g.
-    #    sql_alchemy_conn = "postgresql+psycopg2://kaimo:security55@pipeline-postgresql.caenyxskyq4e.us-east-2.rds.amazonaws.com:5432/pipeline_postgresql"
+    #    sql_alchemy_conn = "postgresql+psycopg2://username:password@pipeline-postgresql.abcdefghijk.us-east-2.rds.amazonaws.com:5432/pipeline_postgresql"
     #
     sql_alchemy_conn = "postgresql+psycopg2://$DATABASE_USERNAME:$DATABASE_PASSWORD@$POSTGRESQL_ADDRESS
     :5432/$DATABSE_NAME"
